@@ -1,0 +1,20 @@
+<h2>Sign in</h2>
+
+<?php echo $this->tag->form("authorization/signin"); ?>
+
+    <p>
+        <label for="login">Login</label>
+        <?php echo $this->tag->textField("login"); ?>
+    </p>
+
+    <p>
+        <label for="password">Password</label>
+        <?php echo $this->tag->textField("password"); ?>
+    </p>
+
+
+    <p>
+        <?php echo $this->tag->submitButton("Sign in"); ?>
+    </p>
+
+<?php echo $this->tag->endForm(); ?>

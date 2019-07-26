@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phalcon Tutorial</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(CSS_URL . "flexslider/flexslider.css"); ?>">
+<link rel="stylesheet" href="<?php echo htmlspecialchars(CSS_URL . "bootstrap/bootstrap.css"); ?>">
+</head>
+<body>
+<div class="container">
+    <?php echo $this->tag->linkTo([BASE_URL . "signup/index", "Sign Up Here!", 'class' => 'btn btn-success']); ?>
+
+    <?php if  ($this->session->has('loggedin') && $this->session->get('loggedin')):
+        echo "Welcome ", $this->session->get('user_name'), " ";
+        echo $this->tag->linkTo([BASE_URL . "authorization/signout", "Sign out Here!", 'class' => 'btn btn-danger']);
+    else:
+        echo $this->tag->linkTo([BASE_URL . "authorization/index", "Sign in Here!", 'class' => 'btn btn-primary']);
+    endif;
+    ?>
+    <br>
+    <br>
+    <?php echo $this->tag->linkTo([BASE_URL, "Home", 'class' => 'btn btn-primary']); ?>
+    <?php echo $this->tag->linkTo([BASE_URL . "admin", "Banners", 'class' => 'btn btn-primary']); ?>
+
+    <?php echo $this->getContent(); ?>
+</div>
+</body>
+</html>
