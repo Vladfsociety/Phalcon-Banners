@@ -10,6 +10,5 @@ class IndexController extends ControllerBase
             'order' => 'position DESC'
         ]);
     }
-
 }
 

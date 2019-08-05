@@ -12,4 +12,13 @@ $loader->registerDirs(
         $config->application->controllersDir,
         $config->application->modelsDir
     ]
-)->register();
+);
+
+$loader->registerNamespaces(
+    [
+        'App\Forms'   => APP_PATH . "/forms/",
+        'App\Plugins' => APP_PATH . "/plugins/",
+    ]
+);
+
+$loader->register();

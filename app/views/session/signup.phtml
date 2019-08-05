@@ -1,0 +1,37 @@
+<?php echo $this->tag->form(
+[
+"session/signup",
+"class" => "form-signin"
+]
+); ?>
+
+<h2 class="form-signin-heading">Sign up</h2>
+
+<?php echo $form->render("name")."<br>".$form->messages('name'); ?>
+
+<?php echo $form->render("login")."<br>".$form->messages('login'); ?>
+
+<?php echo $form->render("password")."<br>".$form->messages('password'); ?>
+
+<?php echo $form->render("confirmPassword")."<br>"; ?>
+
+<?php if (isset($message)):
+        echo $this->flash->error($message);
+    endif;
+?>
+
+<input class="btn btn-large btn-dark input-block-level" name="submit" type="submit" value="Sign up">
+
+<input class="btn btn-large btn-dark input-block-level" name="cancel" type="button" onclick="window.location.replace('/banner/')" value="Cancel">
+
+<br>
+
+<?php echo $form->render("csrf", ['value' => $this->security->getToken()])."<br>".$form->messages('csrf'); ?>
+
+<?php echo $this->tag->endForm(); ?>
+
+
+
+
+
+

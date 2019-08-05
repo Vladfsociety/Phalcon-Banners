@@ -77,7 +77,7 @@ class Banners extends \Phalcon\Mvc\Model
 
     public function showImage()
     {
-        return IMG_URL . $this->url;
+        return IMG_URL . $this->image;
     }
 
 }

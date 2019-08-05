@@ -10,6 +10,16 @@ defined('BASE_PATH') || define('BASE_PATH', getenv('BASE_PATH') ?: realpath(dirn
 defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
 
 
+//my constants
+define('BASE_URL', '');
+define('IMG_URL', BASE_URL . '/banner/public/img/');
+define('CSS_URL', BASE_URL . '/banner/public/css/');
+define('JS_URL', BASE_URL . '/banner/public/js/');
+
+define('IMG_PATH', BASE_PATH . '/public/img/');
+//
+
+
 return new Config([
     'database' => [
         'adapter'     => 'Mysql',

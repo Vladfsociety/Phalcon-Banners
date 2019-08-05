@@ -6,15 +6,6 @@ ini_set('display_errors', 1);
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
 
-//my constants
-define('BASE_URL', '');
-define('IMG_URL', BASE_URL . '/banner/public/img/');
-define('CSS_URL', BASE_URL . '/banner/public/css/');
-define('JS_URL', BASE_URL . '/banner/public/js/');
-
-define('IMG_PATH', BASE_PATH . '/public/img/');
-//
-
 try {
 
     /**

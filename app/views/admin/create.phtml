@@ -1,17 +1,14 @@
 <?php
 echo $this->tag->form(
 [
-"admin/edit",
+"admin/create",
 "autocomplete" => "off",
 "class" => "form",
 "enctype" => "multipart/form-data"
 ]);
 ?>
-<h2 class="form-heading">Edit form</h2>
+<h2 class="form-heading">Create form</h2>
 <div class="container">
-<img src="<?php echo $image; ?>" width="100%" >
-<br>
-<br>
 <div class="row">
 <div class="col-3">
 <?php echo $form->label("name"); ?>
@@ -45,7 +42,7 @@ echo $this->tag->form(
 </div>
 <div class="col-9 right">
 <div class="custom-file">
-<input type="file" class="custom-file-input" id="customFile" name="image">
+<input type="file" class="custom-file-input" id="customFile" name="image" required>
 <label class="custom-file-label" for="customFile"></label>
 </div>
 </div>
@@ -56,12 +53,10 @@ echo $this->tag->form(
 <input class="btn btn-large btn-dark input-block-level" name="cancel" type="button" onclick="window.location.replace('/banner/admin/')" value="Cancel">
 </div>
 <div class="col-6 right">
-<input class="btn btn-large btn-dark input-block-level" name="submit" type="submit" value="Save">
+<input class="btn btn-large btn-dark input-block-level" name="submit" type="submit" value="Create">
 </div>
 </div>
 </div>
-
-<?php echo $form->render("id"); ?>
 
 <?php echo $form->render("csrf", ['value' => $this->security->getToken()]); ?>
 

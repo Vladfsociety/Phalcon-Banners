@@ -1,0 +1,66 @@
+.form {
+  text-align: left;
+  width: 600px;
+  padding: 30px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-delete {
+  text-align: left;
+  width: 300px;
+  padding: 30px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-heading {
+  text-align: center;
+}
+.form .form-heading,
+.form .checkbox {
+  margin-bottom: 30px;
+}
+.form input[type="text"] {
+  height: auto;
+  padding: 7px 9px;
+  width: 100%;
+}
+.form select[name="status"] {
+  width: 50%;
+  height: auto;
+  padding: 7px 9px;
+}
+.form .custom-file {
+  text-align: right;
+  width: 100%;
+}
+.form label {
+  font-size: 20px;
+}
+.right {
+  text-align: right;
+}
+input {
+  width: 100px;
+}
+.btn-mybtn {
+  width: 100px;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}

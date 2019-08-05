@@ -1,0 +1,56 @@
+td {
+    height: 75px;
+}
+#id {
+    width: 100px;
+}
+#name {
+    width: 150px;
+}
+#image {
+    width: 250px;
+}
+#url {
+    width: 300px;
+}
+#status {
+    width: 100px;
+}
+#position {
+    width: 100px;
+}
+#img {
+    width: 150px;
+    text-align: center;
+}
+#edit {
+    width: 100px;
+}
+#delete {
+    width: 100px;
+}
+.longtoshort {
+    word-wrap : break-word;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    max-width: 1px;
+}
+
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+
+.page-link {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+.page-link:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}

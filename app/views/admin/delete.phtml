@@ -1,0 +1,26 @@
+<?php
+echo $this->tag->form(
+[
+"admin/delete",
+"autocomplete" => "off",
+"class" => "form-delete"
+]);
+?>
+<h2 class="form-heading">Are you sure?</h2>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-6">
+<?php echo $form->render("No"); ?>
+</div>
+<div class="col-6 right">
+<?php echo $form->render("Yes"); ?>
+</div>
+</div>
+</div>
+
+<?php echo $form->render("id"); ?>
+
+<?php echo $form->render("csrf", ['value' => $this->security->getToken()]); ?>
+
+<?php echo $this->tag->endForm(); ?>
